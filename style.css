@@ -1,0 +1,76 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  width: 100vw;
+  height: 100vh;
+  background-image: url(./stunning.jpg);
+  background-repeat: no-repeat;
+
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(30, 29, 29, 0.2);
+  color: antiquewhite;
+  height: 13vh;
+  padding: 0 3rem;
+}
+.list {
+  display: flex;
+
+  list-style: none;
+}
+h2 {
+  letter-spacing: 0.5rem;
+  font-size: 32px;
+}
+li {
+  padding: 0 15px;
+  font-size: 1.2rem;
+}
+li:hover {
+  border-bottom: 3px solid rgb(149, 27, 124);
+
+  transition: left 250ms ease-in-out, right 250ms ease-in-out;
+}
+li a {
+  text-decoration: none;
+  color: antiquewhite;
+}
+.ham {
+  display: none;
+}
+.cross {
+  display: none;
+}
+
+@media screen and (max-width: 530px) {
+  .list {
+    display: none;
+  }
+  .ham {
+    display: block;
+  }
+  .fa-solid {
+    width: 100%;
+  }
+  .list {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    right: 0;
+    top: 13vh;
+    width: 25vw;
+    background-color: rgba(30, 29, 29, 0.2);
+    /* opacity:0; */
+  }
+  li {
+    padding: 10px;
+  }
+}
